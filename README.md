@@ -1,4 +1,5 @@
-# HybdridFramework_UI_API_Automation
+# HybdridFramework_UI_API_Automation 
+# Author: Ram Chavan - Senior QA Engineer
 complete, ready-to-drop-into-a-Maven project implementing the Hybrid UI + API Test Automation Framework
 
 I used Sauce Demo (https://www.saucedemo.com) as the UI AUT and ReqRes (https://reqres.in) as the API AUT (both are public/open for testing). 
