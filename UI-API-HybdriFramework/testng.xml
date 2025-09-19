@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HybridSuite" parallel="tests" thread-count="4">
+
+    <listeners>
+        <listener class-name="RamChavanTestAutomation.UI_API_HybdriFramework.listeners.TestListener"/>
+    </listeners>
+
+    <!-- 🔹 UI Tests on Chrome -->
+    <test name="UI Tests - Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="RamChavanTestAutomation.UI_API_HybdriFramework.ui.LoginUITests"/>
+            <class name="RamChavanTestAutomation.UI_API_HybdriFramework.ui.ProductUITests"/>
+        </classes>
+    </test>
+
+    <!-- 🔹 UI Tests on Firefox -->
+    <test name="UI Tests - Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="RamChavanTestAutomation.UI_API_HybdriFramework.ui.LoginUITests"/>
+            <class name="RamChavanTestAutomation.UI_API_HybdriFramework.ui.ProductUITests"/>
+        </classes>
+    </test>
+
+    <!-- 🔹 API Tests -->
+    <test name="API Tests">
+        <classes>
+            <class name="RamChavanTestAutomation.UI_API_HybdriFramework.api.AuthAPITests"/>
+            <class name="RamChavanTestAutomation.UI_API_HybdriFramework.api.UserAPITests"/>
+            <class name="RamChavanTestAutomation.UI_API_HybdriFramework.api.ProductAPITests"/>
+        </classes>
+    </test>
+
+    <!-- 🔹 Integration / Hybrid Tests -->
+    <test name="Integration Tests - Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="RamChavanTestAutomation.UI_API_HybdriFramework.integration.UserJourneyTests"/>
+            <class name="RamChavanTestAutomation.UI_API_HybdriFramework.integration.E2EWorkflowTests"/>
+        </classes>
+    </test>
+
+</suite>

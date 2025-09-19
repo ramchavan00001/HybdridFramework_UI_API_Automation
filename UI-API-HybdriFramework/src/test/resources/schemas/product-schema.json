@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Product Schema",
+  "type": "object",
+  "properties": {
+    "id": { "type": "integer" },
+    "name": { "type": "string" },
+    "price": { "type": "number" },
+    "currency": { "type": "string", "enum": ["USD", "INR", "EUR"] },
+    "available": { "type": "boolean" },
+    "category": { "type": "string" }
+  },
+  "required": ["id", "name", "price", "currency", "available"]
+}

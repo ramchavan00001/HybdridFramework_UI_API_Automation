@@ -1,0 +1,62 @@
+
+├── UI-API-HybridiFramework [HybridiFramework_UI_API_Automation main]
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   └── RamChavanTestAutomation.UI_API_HybridiFramework
+│   │   │   │       ├── api.clients
+│   │   │   │       │   ├── AuthClient.java
+│   │   │   │       │   └── UserClient.java
+│   │   │   │       ├── api.models
+│   │   │   │       │   ├── AuthRequest.java
+│   │   │   │       │   ├── AuthResponse.java
+│   │   │   │       │   └── User.java
+│   │   │   │       ├── base
+│   │   │   │       │   ├── APITestBase.java
+│   │   │   │       │   ├── DriverFactory.java
+│   │   │   │       │   └── TestBase.java
+│   │   │   │       ├── dataprovider
+│   │   │   │       │   └── ExcelDataProvider.java
+│   │   │   │       ├── listeners
+│   │   │   │       │   └── TestListener.java
+│   │   │   │       ├── pages
+│   │   │   │       │   ├── HomePage.java
+│   │   │   │       │   └── LoginPage.java
+│   │   │   │       └── resources
+│   │   │   │           ├── ConfigReader.java
+│   │   │   │           └── Log4j2.xml
+│   │   │   └── resources
+│   │   │       └── testdata
+│   │   │           └── testdata.xlsx
+│   │   └── test
+│   │       ├── java
+│   │       │   └── RamChavanTestAutomation.UI_API_HybridiFramework
+│   │       │       ├── api
+│   │       │       │   ├── AuthAPITests.java
+│   │       │       │   ├── ProductAPITests.java
+│   │       │       │   └── UserAPITests.java
+│   │       │       ├── integration
+│   │       │       │   └── E2EWorkflowTests.java
+│   │       │       └── ui
+│   │       │           ├── LoginUITests.java
+│   │       │           └── ProductUITests.java
+│   │       └── resources
+│   │           ├── schemas
+│   │           │   ├── product-schema.json
+│   │           │   └── users-schema.json
+│   │           ├── testdata
+│   │           │   └── users.json
+│   │           └── config.properties
+├── JRE System Library [JavaSE-11]
+├── Maven Dependencies
+├── TestNG
+├── logs
+├── reports
+├── screenshots
+├── selenium-grid
+├── src
+├── target
+├── pom.xml
+└── testng.xml
+└── README.md
+```

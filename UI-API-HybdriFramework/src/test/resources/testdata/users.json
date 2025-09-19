@@ -1,0 +1,14 @@
+{
+  "validUser": {
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+  },
+  "invalidUser": {
+    "email": "invalid@reqres.in",
+    "password": "wrongpass"
+  },
+  "newUser": {
+    "name": "morpheus",
+    "job": "leader"
+  }
+}
